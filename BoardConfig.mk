@@ -83,6 +83,9 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
