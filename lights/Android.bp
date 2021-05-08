@@ -1,8 +1,8 @@
 cc_binary {
-    name: "android.hardware.lights-service.example",
+    name: "android.hardware.lights-service.xiaomi_bengal",
     relative_install_path: "hw",
-    init_rc: ["lights-default.rc"],
-    vintf_fragments: ["lights-default.xml"],
+    init_rc: ["lights-xiaomi_bengal.rc"],
+    vintf_fragments: ["lights-xiaomi_bengal.xml"],
     vendor: true,
     shared_libs: [
         "libbase",
