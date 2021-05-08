@@ -1,0 +1,5 @@
+service vendor.light-xiaomi_bengal /vendor/bin/hw/android.hardware.lights-service.xiaomi_bengal
+    class hal
+    user nobody
+    group nobody
+    shutdown critical
