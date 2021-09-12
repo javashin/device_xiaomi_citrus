@@ -109,6 +109,9 @@ on boot
 #HQ-83664  wifi sar function by wangzhengyuan at 20200727
     copy /vendor/etc/wifi/sar-vendor-cmd.xml /data/sar-vendor-cmd.xml
 
+#Prevents permission denied error for telephony
+    chmod 0644 /proc/cmdline
+
 #fingerprint
     #goodix
     chown system system /dev/goodix_fp
