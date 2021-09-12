@@ -33,6 +33,10 @@ import init.mishow.ctl.rc
 on early-init
     write /proc/sys/kernel/sched_boost 1
 
+on early-init
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 0755 /sys/kernel/debug
+
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
