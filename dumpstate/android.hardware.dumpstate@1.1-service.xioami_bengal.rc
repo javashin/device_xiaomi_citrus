@@ -1,7 +1,7 @@
-service dumpstate-1-1 /vendor/bin/hw/android.hardware.dumpstate@1.1-service.example
+service dumpstate-1-1 /vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi_bengal
     class hal
-    user nobody
-    group nobody
+    user system
+    group system
     interface android.hardware.dumpstate@1.0::IDumpstateDevice default
     interface android.hardware.dumpstate@1.1::IDumpstateDevice default
     oneshot

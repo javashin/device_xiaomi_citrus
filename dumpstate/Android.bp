@@ -1,13 +1,13 @@
 cc_binary {
-    name: "android.hardware.dumpstate@1.1-service.example",
+    name: "android.hardware.dumpstate@1.1-service.xioami_bengal",
     vendor: true,
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
     init_rc: [
-        "android.hardware.dumpstate@1.1-service.example.rc",
+        "android.hardware.dumpstate@1.1-service.xioami_bengal.rc",
     ],
     vintf_fragments: [
-        "android.hardware.dumpstate@1.1-service.example.xml",
+        "android.hardware.dumpstate@1.1-service.xioami_bengal.xml",
     ],
     srcs: ["main.cpp"],
     shared_libs: [
@@ -21,6 +21,6 @@ cc_binary {
         "libutils",
     ],
     cflags: [
-        "-DLOG_TAG=\"android.hardware.dumpstate@1.1-service.example\"",
+        "-DLOG_TAG=\"android.hardware.dumpstate@1.1-service.xiaomi_bengal\"",
     ],
 }
