@@ -50,5 +50,10 @@ TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,juice
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit-juice
 TARGET_RECOVERY_DEVICE_MODULES := libinit-juice
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Inherit from the proprietary version
 include vendor/xiaomi/juice/BoardConfigVendor.mk
