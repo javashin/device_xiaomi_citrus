@@ -24,6 +24,7 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    vendor/qcom/opensource/data-ipa-cfg-mgr \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf
 
