@@ -80,6 +80,9 @@ DONT_DEXPREOPT_PREBUILTS := true
 USE_DEX2OAT_DEBUG := true
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
