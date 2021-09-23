@@ -158,5 +158,11 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
+# Treble
+BOARD_SYSTEMSDK_VERSIONS := 29
+BOARD_VNDK_VERSION := current
+ENABLE_VIRTUAL_AB := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/juice/BoardConfigVendor.mk
