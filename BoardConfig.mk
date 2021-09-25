@@ -85,12 +85,19 @@ DONT_DEXPREOPT_PREBUILTS := true
 USE_DEX2OAT_DEBUG := true
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
+# FM
+BOARD_HAVE_QCOM_FM := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_USE_QTI_BT_STACK := true
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
@@ -134,6 +141,9 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 # Toolchain Clang
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
+
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -185,6 +195,9 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
@@ -210,6 +223,9 @@ BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
+
+#QTI Bluetooth
+include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk
 
 # Inherit from the proprietary version
 include vendor/xiaomi/juice/BoardConfigVendor.mk
