@@ -177,6 +177,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.bengal
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.xiaomi_bengal \
+    vendor.qti.hardware.vibrator-impl
+
+PRODUCT_PACKAGES += \
+   vibrator.default
+
 # HIDL
 PRODUCT_PACKAGES += \
     libbase \
