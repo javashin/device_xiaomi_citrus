@@ -44,6 +44,48 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0
 
 # Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.common@6.0 \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio.effect@6.0 \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@6.0 \
+    android.hardware.audio@6.0-impl \
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.audiohalext@1.0 \
+    vendor.qti.hardware.audiohalext@1.0.vendor\
+    vendor.qti.hardware.audiohalext-utils
+
+PRODUCT_PACKAGES += \
+    audio.a2dp.bengal \
+    audio.a2dp.default \
+    audio.primary.bengal \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libaudio-resampler \
+    libbatterylistener \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libsndmonitor \
+    libspkrprot \
+    libtinycompress \
+    libtinycompress.vendor \
+    libvolumelistener
+
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
