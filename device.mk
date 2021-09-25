@@ -170,6 +170,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service.xioami_bengal
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.xiaomi_bengal
+
+PRODUCT_PACKAGES += \
+    lights.bengal
+
 # HIDL
 PRODUCT_PACKAGES += \
     libbase \
