@@ -134,6 +134,24 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.2.vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0 \
+    android.hardware.camera.provider@2.6 \
+    android.hardware.camera.device@3.6
+
+PRODUCT_PACKAGES += \
+   vendor.qti.hardware.camera.postproc@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor \
+    libdng_sdk.vendor \
+    libstdc++.vendor \
+    libgui_vendor \
+    libxml2 \
+
+PRODUCT_PACKAGES += GoogleCameraGo
+
 # Display
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
