@@ -361,7 +361,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     $(LOCAL_PATH)/configs/media/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml
 
-# Sensor
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0 \
+    android.hardwade.sensors@2.0 \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@2.0-impl
+
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
