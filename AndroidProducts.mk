@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_juice.mk
+    $(LOCAL_DIR)/nad_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_juice-user \
-    aosp_juice-userdebug \
-    aosp_juice-eng
+    nad_juice-user \
+    nad_juice-userdebug \
+    nad_juice-eng

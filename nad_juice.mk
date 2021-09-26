@@ -6,8 +6,8 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Nusantara stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
@@ -18,7 +18,7 @@ USE_PIXEL_CHARGING := true
 #TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_juice
+PRODUCT_NAME := nad_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
