@@ -1,0 +1,2 @@
+hal_server_domain(hal_configstore_default, hal_configstore)
+init_daemon_domain(hal_configstore_default)
