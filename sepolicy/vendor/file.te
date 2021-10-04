@@ -1,16 +1,29 @@
-# data
-type display_data_file, data_file_type, core_data_file_type, file_type;
+# Data
+type fingerprint_data_file, data_file_type, file_type, vendor_persist_type;
+type thermal_data_file, file_type, data_file_type;
 
-# firmware
-type adsprpcd_file, file_type;
-type bt_firmware_file, file_type;
-type firmware_file, file_type;
-type persist_file, file_type;
+# Persist
+type camera_persist_file, file_type, vendor_persist_type;
+type persist_subsys_file, vendor_persist_type, file_type;
 
-# socket
-type pps_socket, file_type;
+# Proc
+type proc_last_kmsg, fs_type, proc_type;
 
-#sysfs
-type sysfs_graphics, sysfs_type, fs_type;
-type sysfs_tp_fodstatus, sysfs_type, fs_type;
-type sysfs_kgsl, sysfs_type, fs_type;
+# Public
+type public_adsprpcd_file, file_type;
+
+# Socket
+type audio_socket, file_type;
+
+# Sysfs
+type sysfs_msm_boot, fs_type, sysfs_type;
+type sysfs_msm_subsys, sysfs_type, fs_type;
+type sysfs_wireless_supply, sysfs_type, fs_type;
+type vendor_sysfs_smart_fps, fs_type, sysfs_type;
+type vendor_sysfs_dynamic_fps, fs_type, sysfs_type;
+type vendor_sysfs_iio, fs_type, sysfs_type;
+
+# Ultrasound
+type ultrasound_device, dev_type;
+
+

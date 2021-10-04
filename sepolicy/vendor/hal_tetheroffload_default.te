@@ -1,0 +1,2 @@
+hal_server_domain(hal_tetheroffload_default, hal_tetheroffload)
+init_daemon_domain(hal_tetheroffload_default)
