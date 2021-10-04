@@ -1,0 +1,2 @@
+hal_server_domain(hal_wifi_default, hal_wifi)
+init_daemon_domain(hal_wifi_default)
