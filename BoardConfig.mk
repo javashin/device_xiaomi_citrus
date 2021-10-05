@@ -64,6 +64,9 @@ HWUI_COMPILE_FOR_PERF := true
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit-juice
 TARGET_RECOVERY_DEVICE_MODULES := libinit-juice
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # Dex
 ifeq ($(HOST_OS),linux)
     ifneq ($(TARGET_BUILD_VARIANT),eng)
