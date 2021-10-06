@@ -2,6 +2,9 @@
 allow hal_power_default input_device:dir r_dir_perms;
 allow hal_power_default input_device:chr_file rw_file_perms;
 
+allow hal_power sysfs_battery_saver:dir r_dir_perms;
+allow hal_power sysfs_battery_saver:file rw_file_perms;
+
 allow hal_power_default sysfs_touchpanel:dir search;
 allow hal_power_default sysfs_touchpanel:file rw_file_perms;
 

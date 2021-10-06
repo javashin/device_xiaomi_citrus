@@ -1,3 +1,6 @@
+# Battery Saver
+genfscon sysfs /module/battery_saver/parameters/enabled 			u:object_r:sysfs_battery_saver:s0
+
 # DSP
 genfscon sysfs /kernel/boot_cdsp/boot                                           u:object_r:sysfs_msm_boot:s0
 
