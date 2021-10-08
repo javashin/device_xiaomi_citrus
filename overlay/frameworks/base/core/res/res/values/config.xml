@@ -24,17 +24,17 @@
 
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
-     <bool name="config_allowAllRotations">false</bool>
+     <bool name="config_allowAllRotations">true</bool>
 
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
      <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
-     <bool name="config_bluetooth_hfp_inband_ringing_support">false</bool>
+     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
 
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
-     <bool name="config_bluetooth_le_peripheral_mode_supported">false</bool>
+     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
 
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
      <bool name="config_camera_sound_forced">true</bool>
@@ -42,7 +42,7 @@
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
-     <bool name="config_carrier_volte_available">false</bool>
+     <bool name="config_carrier_volte_available">true</bool>
      <bool name="config_carrier_volte_tty_supported">true</bool>
 
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
@@ -101,7 +101,7 @@
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
     -->
-     <bool name="config_enableWifiDisplay">false</bool>
+     <bool name="config_enableWifiDisplay">true</bool>
 
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
@@ -170,7 +170,7 @@
      <bool name="config_supportAudioSourceUnprocessed">false</bool>
 
     <!-- Whether device supports double tap to wake -->
-     <bool name="config_supportDoubleTapWake">false</bool>
+     <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
      <bool name="config_supportSystemNavigationKeys">false</bool>
@@ -186,7 +186,7 @@
      <bool name="config_sustainedPerformanceModeSupported">false</bool>
 
     <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
-     <bool name="config_swipe_up_gesture_setting_available">false</bool>
+     <bool name="config_swipe_up_gesture_setting_available">true</bool>
 
     <!-- Config determines whether to update phone object when voice registration
          state changes. Voice radio tech change will always trigger an update of
@@ -203,7 +203,7 @@
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
-     <bool name="config_useDevInputEventForAudioJack">false</bool>
+     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
     <!-- Enable video pause workaround when enabling/disabling the camera. -->
      <bool name="config_useVideoPauseWorkaround">false</bool>
@@ -221,19 +221,19 @@
      <bool name="config_wifiDisplaySupportsProtectedBuffers">false</bool>
 
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
-     <bool name="config_wifi_background_scan_support">false</bool>
+     <bool name="config_wifi_background_scan_support">true</bool>
 
     <!-- Wifi driver supports batched scan -->
-     <bool name="config_wifi_batched_scan_supported">false</bool>
+     <bool name="config_wifi_batched_scan_supported">true</bool>
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
-     <bool name="config_wifi_dual_band_support">false</bool>
+     <bool name="config_wifi_dual_band_support">true</bool>
 
     <!-- Boolean indicating whether single radio chain scan results are to be used for network selection -->
      <bool name="config_wifi_framework_use_single_radio_chain_scan_results_network_selection">true</bool>
 
     <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
-     <bool name="config_wifi_softap_acs_supported">false</bool>
+     <bool name="config_wifi_softap_acs_supported">true</bool>
 
     <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
      <bool name="config_wifi_softap_ieee80211ac_supported">false</bool>
