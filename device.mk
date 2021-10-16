@@ -524,6 +524,9 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom
 
 PRODUCT_PACKAGES += \
+    AospWifiResOverlay \
+
+PRODUCT_PACKAGES += \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
