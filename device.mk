@@ -553,6 +553,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom
 
 PRODUCT_PACKAGES += \
+    WifiResCommon \
     AospWifiResOverlay \
 
 PRODUCT_PACKAGES += \
