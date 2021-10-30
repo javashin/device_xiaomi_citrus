@@ -83,6 +83,7 @@ HWUI_COMPILE_FOR_PERF := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest/vendor.qti.hardware.btconfigstore.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifest/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/manifest/framework_compatibility_matrix.xml
 
