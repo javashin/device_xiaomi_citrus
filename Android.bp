@@ -2,7 +2,5 @@ soong_namespace {
      imports: [
         "vendor/qcom/opensource/dataservices",
         "vendor/qcom/opensource/data-ipa-cfg-mgr",
-        "vendor/qcom/opensource/commonsys/packages/apps/Bluetooth",
-        "vendor/qcom/opensource/commonsys/system/bt/conf",
     ]
 }
