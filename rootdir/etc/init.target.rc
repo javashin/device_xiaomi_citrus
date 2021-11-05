@@ -397,6 +397,16 @@ on boot
     #add for ignoring adsp crash
     write /sys/bus/msm_subsys/devices/subsys0/restart_level related
 
+on property:init.svc.vendor.nv_mac=stopped
+    start vendor.btmac-sh
+
+service vendor.btmac-sh /vendor/bin/init.mi.btmac.sh
+    class late_start
+    user system
+    group system bluetooth wifi
+    oneshot
+    disabled
+
 service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     class late_start
     user root
