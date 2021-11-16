@@ -133,6 +133,8 @@ PRODUCT_PACKAGES += \
     libldacBT_dec \
     libldacBT_bco
 
+PRODUCT_PACKAGES += bt-mac-generator
+
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \

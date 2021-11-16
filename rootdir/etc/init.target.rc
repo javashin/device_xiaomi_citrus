@@ -75,12 +75,15 @@ on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/tloc 0700 system drmrpc
 
+#generate bt address
+    mkdir /data/vendor/mac_addr 0771 bluetooth bluetooth
+    start bt-mac-generator
+
 #xiong porting
 # jiangxueqin To create thermal and config directories, you must first create thermal and then create config
 #    mkdir /data/vendor/.tp/ 0775 system system
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
-    mkdir /data/vendor/mac_addr 0771 system system
     mkdir /data/vendor/charge_logger 0771 system system
     chmod 0777 /vendor/bin/scancode_bin
 
@@ -206,6 +209,14 @@ service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
     group system
+
+#bt-mac-generator
+service bt-mac-generator /vendor/bin/bt-mac-generator
+    class main
+    user bluetooth
+    group bluetooth
+    oneshot
+    disabled
 
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
