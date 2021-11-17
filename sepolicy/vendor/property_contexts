@@ -2,6 +2,11 @@
 audio.soundtrigger.debug.urser_id u:object_r:vendor_audio_prop:s0
 audio_hal.in_period_size                u:object_r:vendor_audio_prop:s0
 
+# Bluetooth
+ro.bt.bdaddr_path                      u:object_r:vendor_bluetooth_prop:s0
+ro.vendor.bt.bdaddr_path               u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.service.bdroid.bdaddr   u:object_r:vendor_bluetooth_prop:s0
+
 # Camera
 camera.                                         u:object_r:vendor_camera_prop:s0
 persist.camera.                                 u:object_r:vendor_camera_prop:s0
