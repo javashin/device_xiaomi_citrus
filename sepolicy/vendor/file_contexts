@@ -8,6 +8,7 @@
 
 # Bluetooth
 /vendor/bin/init\.mi\.btmac\.sh                                           u:object_r:vendor_qti_init_shell_exec:s0
+/vendor/bin/bt-mac-generator	                                          u:object_r:bt_mac_generator_exec:s0
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                        u:object_r:camera_persist_file:s0
