@@ -14,11 +14,11 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.usb@1.0-service.basic",
+    name: "android.hardware.usb@1.0-service.xiaomi_bengal",
+    init_rc: ["android.hardware.usb@1.0-service.xiaomi_bengal.rc"],
+    vintf_fragments: ["android.hardware.usb@1.0-service.xiaomi_bengal.xml"],
     relative_install_path: "hw",
     vendor: true,
-    init_rc: ["android.hardware.usb@1.0-service.basic.rc"],
-    vintf_fragments: ["android.hardware.usb@1.0-service.basic.xml"],
     srcs: ["service.cpp", "Usb.cpp"],
     shared_libs: [
         "libbase",
