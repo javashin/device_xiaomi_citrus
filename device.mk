@@ -169,6 +169,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power.stats@1.0-service.mock
 
+# Usb
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.xiaomi_bengal
+
 # Dumpstate
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service.xioami_bengal
