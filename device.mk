@@ -398,6 +398,7 @@ PRODUCT_PACKAGES += \
     init.mi.usb.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
+    init.mi.btmac.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
@@ -414,6 +415,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
+    init.mi.btmac.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.qti.ufs.rc \
